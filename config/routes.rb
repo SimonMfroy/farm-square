@@ -6,11 +6,16 @@ Rails.application.routes.draw do
     controllers: {
       registrations: 'registrations'
     }
+  devise_scope :user do 
+    get '/signout', to: 'devise/sessions#destroy', as: :signout
+  end
 
   get 'team', to: "pages#team"
 
   root to: 'pages#home'
 
+  resources :tasks
+  resources :bookings
   resources :contacts, only: [:new, :create]
 
 end
