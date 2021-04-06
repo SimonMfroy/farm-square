@@ -3,11 +3,10 @@
   <%= image_tag "logo_F.png", :style=>'width: 70px;height:70px;' %>
   <% end %>
 
-  <%= link_to "Notre Equipe", root_path, class: "nav-link navbar-a" %>
+  <%= link_to "Notre Equipe", team_path, class: "nav-link navbar-a" %>
   <%= link_to "Blog", root_path, class: "nav-link navbar-a" %>
-<!--   <%#= link_to "Nous rejoindre", new_user_registration_path, class: "nav-link navbar-a" %> -->
 
-  <%= link_to "Espace Membres", root_path, class: "nav-link" %>
+  <%= link_to "Je sais pas", root_path, class: "nav-link" %>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -40,9 +39,6 @@
       <li class="nav-item">
         <%= link_to "Se connecter", new_user_session_path, class: "nav-link" %>
       </li>
-<!--       <li class="nav-item">
-        <%#= link_to "S'inscrire", new_user_registration_path, class: "nav-link" %>
-      </li> -->
       <% end %>
     </ul>
   </div>
