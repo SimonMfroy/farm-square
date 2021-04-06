@@ -1,7 +1,49 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
-  <div class="container">
-    <h1>Le Wagon brings <strong>tech skills</strong> to <strong>creative people</strong>!</h1>
-    <p>Change your life and learn to code at one of our campuses around the world.</p>
-    <%= link_to "Nous rejoindre", new_contact_path, class: "btn btn-flat" %>
+<div classe="homehome">
+
+  <div class="JumbotronDisplay jumbotron">
+    <div class="top-home">
+      <div class="p-0 m-0 row">
+        <div class="Jumbotron_col d-flex flex-column justify-content-center align-items-center text-center col-md-6 col-12">
+          <h2 class="display-4">Partagez votre amour pour l'agriculture !</h2>
+          <h3>Votre avenir est entre vos mains</h3>
+          <div class="my-5">
+            <%= link_to "Rejoignez l'aventure", new_contact_path, class: "btn-flat btn btn-lg"  %>
+          </div>
+        </div>
+        <div class="Jumbotron_col d-none d-lg-block col-md-6">
+          <div>
+            <div title="" role="button" aria-label="animation" tabindex="0" style="width: 100%; height: 100%; overflow: hidden; margin: 0px auto; outline: none;">
+              <lottie-player
+                autoplay
+                loop
+                mode="normal"
+                src="https://assets4.lottiefiles.com/private_files/lf30_w1nvcyqq.json">
+              </lottie-player>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <div data-aos="fade-up" data-aos-duration="3000">
+    <div class="arguments">
+      <div class="arg-1">
+        <%= image_tag "check.svg", alt: "alttext", :class => "check" %>
+        <p class="mb-3 title-arg">Agrument 1</p>
+        <p class="text-center title-arg-light">Cupidatat voluptate culpa sit ad veniam consequat ex consectetur.</p>
+      </div>
+      <div class="arg-1">
+        <%= image_tag "check.svg", alt: "alttext", :class => "check" %>
+        <p class="mb-3 title-arg">Agrument 1</p>
+        <p class="text-center title-arg-light">Excepteur excepteur non exercitation qui in magna in eu eu culpa aute sit ut commodo magna ut excepteur sunt.</p>
+      </div>
+      <div class="arg-1">
+        <%= image_tag "check.svg", alt: "alttext", :class => "check" %>
+        <p class="mb-3 title-arg">Agrument 1</p>
+        <p class="text-center title-arg-light">Exercitation excepteur velit fugiat eu ut aliqua eiusmod aliquip do duis commodo nisi minim culpa deserunt fugiat.</p>
+      </div>
+    </div>
+  </div>
+
 </div>

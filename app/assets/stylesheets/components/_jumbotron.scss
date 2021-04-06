@@ -1,0 +1,15 @@
+.JumbotronDisplay {
+  background-image: linear-gradient(270deg,#03CEA4,#008F85);
+  background-size: cover;
+  min-height: 400px;
+  min-width: 100%;
+  margin: 0;
+
+  h2,
+  h3 {
+    color: white;
+  }
+  .cta:hover {
+    color: #e57c00;
+  }
+}

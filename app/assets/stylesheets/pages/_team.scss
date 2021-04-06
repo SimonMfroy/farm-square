@@ -1,0 +1,81 @@
+#pages-team {
+
+  .banniere {
+      color: #1d3557;
+  }
+
+  .innerpage-banner {
+      background-image: url(https://res.cloudinary.com/def2ukbdr/image/upload/v1617050475/farm-square/_salade_10_z267iz.jpg);
+      background-size: cover;
+      background-position: center;
+      padding-top: 7px;
+      padding-bottom: 7px;
+      margin-top: 3px;
+      margin-bottom: 7px;
+      border-radius: 8px;
+      height: 250px;
+  }
+
+  .subtitle span {
+      font-weight: bold;
+  }
+
+  .subtitle {
+      color: white;
+  }
+
+  .bouton {
+      height: 40px;
+      width: 100px;
+      transition: all 0.2s;
+      border-radius: 8px;
+      border: 0.2px solid white;
+      background-color: rgba(167, 164, 158, 0.331);
+      color: white;
+      font-size: 16px;
+      margin-bottom: 0.1px;
+  }
+
+  .bouton:hover {
+      color: #000000;
+      background: linear-gradient(to right, #52b69a, #52b788, #74c69d, #95d5b2, #b7e4c7);
+  }
+
+  .card {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+  }
+
+  .card span {
+      margin-left: 6px;
+  }
+
+  .collapse_card {
+      background-color: #fdfffc;
+  }
+
+  .card-header {
+      background: linear-gradient(to right, #52b69a, #52b788, #74c69d, #95d5b2, #b7e4c7);
+  }
+
+  .bouton-membre {
+      color: white;
+  }
+
+  .bouton-membre:hover {
+      color: white;
+  }
+
+  .bouton-membre img {
+      width: 140px;
+      height: 140px;
+      border-radius: 8px;
+  }
+
+  .rounded-circle {
+      width: 70px;
+      height: 70px
+  }
+
+}
