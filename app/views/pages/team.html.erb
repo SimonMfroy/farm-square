@@ -1,0 +1,96 @@
+<div class="innerpage-banner left bg-overlay-dark-7" style="no-repeat; center;">
+		<div class="container">
+			<div class="banniere row">
+				<div class="col-md-12 align-self-center">
+					<h1 class="title">
+            <b>Notre équipe</b>
+          </h1>
+					<h5 class="subtitle" >
+            Découvrez les acteurs de notre association <span>Farm square</span>
+          </h5>
+					<button class =" bouton btn btn mt-5 ">
+            <%= link_to root_path, :style=>'color: white;text-decoration:none;' do %> Accueil<% end %>
+          </button>
+				</div>
+			</div>
+		</div>
+</div>
+
+
+<div id="accordion">
+  <div class="card">
+    <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" >
+      <h5>
+        <button class="bouton-membre btn btn-link collapsed text-decoration-none">
+        <img src="https://thispersondoesnotexist.com/image" alt="pic">
+        <span>Richard Laudet, 43 ans (Fondateur)</span>
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse_card" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+        <p>
+          C’est fort de mes 21 années d’expériences dans les domaines du commerce, du social, de l’agriculture biologique et de l'entreprenariat, qu’il m’a semblé bon de pouvoir mettre toute cette expérience au service de ce projet de ferme urbaine verticale.
+          <br>
+          C’est en faisant face aux nombreuses problématiques rencontrées dans le domaine du maraîchage biologique, que j’ai pris conscience des difficultés pour les commerçants et de la cuisine collective, d’avoir accès aux légumes et aromatiques de qualité, tout au long de l’année. Les problèmes de régularité d’approvisionnement, les fluctuations des prix du marché, leurs besoins en volumes à des périodes bien définies m’ont encouragé à développer ce projet, utilisant des techniques innovantes et créatives comme l’aquaponie et l'automatisation.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+      <h5>
+        <button class="bouton-membre btn btn-link collapsed text-decoration-none">
+          <img src="https://thispersondoesnotexist.com/image" alt="pic">
+          <span>Yvan Leblond, 44 ans</span>
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse_card" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+        <p>
+          Jardinier/Paysagiste depuis 22 ans.
+          <br>
+          Maraicher/Arboriculteur depuis 10 ans.
+          <br>
+          Le monde des plantes me passionne, et aux vues des enjeux de demain, je crois que l’hydroponie et l’aquaponie joueront bientôt un rôle majeur dans l’agro-alimentaire, ne serait-ce que pour l’économie en eau que l’hydroponie représente.
+          <br>
+          Mêler ces projets à des enjeux locaux, sociaux, environnementaux, humains, économiques pour qu’ils s’inscrivent dans le temps, c’est comme une graine qu’on plante dans une terre bien préparé.
+          <br>
+          J’ai rejoint l’équipe Farm Square fin 2020, nous travaillons sur des territoires différents (je suis dans le sud de la France) mais mettons nos savoirs faire en commun pour tenir compte des particularités de chaque projets aussi différents soient-ils.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+      <h5>
+        <button class="bouton-membre btn btn-link collapsed text-decoration-none">
+          <img src="https://thispersondoesnotexist.com/image" alt="pic">
+          <span>Ronan Clouard, 42 ans</span>
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse_card" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+        <p>
+          Passionné par la permaculture, la formation, le management et les projets innovants je me suis joint à l’aventure dont je partage la vision. Je m’intéresse aux problématiques environnementales et sociales, et l’aquaponie va nous permettre de produire des légumes à très haute qualité nutritive tout en ayant une faible utilisation des énergies. L’agriculture urbaine n’est pas un problème, mais une réelle opportunité que nous devons ainsi transmettre aux futures générations.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h4 class="py-4 text-center">
+  <b>Nos bénévoles</b>
+</h4>
+
+<div class="row">
+  <% for i in 0..5 do%>
+    <div class="membres col-lg-4 text-center">
+        <img class="rounded-circle" src="https://thispersondoesnotexist.com/image" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
+        <p style="color:#167FFB;">Jean-Michel</p>
+    </div>
+  <%end%>
+</div>
