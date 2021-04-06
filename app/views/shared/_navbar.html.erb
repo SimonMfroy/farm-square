@@ -32,7 +32,7 @@
           <%= link_to "Ecrire un article", root_path, class: "dropdown-item" %>
           <% end %>
           <div class="dropdown-divider"></div>
-          <%= link_to "Deconnexion", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+          <%= link_to "Deconnexion", signout_path, method: :delete, class: "dropdown-item" %>
         </div>
       </li>
       <% else %>

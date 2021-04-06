@@ -8,12 +8,12 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
-import AOS from 'aos';
-document.addEventListener('DOMContentLoaded', function() {
-  AOS.init({
-    startEvent: 'turbolinks:load' // if you are using turbolinks
-  });
-});
+// import AOS from 'aos';
+// document.addEventListener('DOMContentLoaded', function() {
+//   AOS.init({
+//     startEvent: 'turbolinks:load' // if you are using turbolinks
+//   });
+// });
 
 Rails.start()
 Turbolinks.start()
