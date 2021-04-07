@@ -1,21 +1,18 @@
-require('@lottiefiles/lottie-player');
-require("pesky_scrolly_stuff");
+require("@rails/ujs").start()
+require("turbolinks").start()
+require("@rails/activestorage").start()
+require("channels")
+require('@lottiefiles/lottie-player')
 
-import 'bootstrap';
+// External imports
+import "bootstrap";
+import AOS from 'aos';
 
-import Rails from "@rails/ujs"
-import Turbolinks from "turbolinks"
-import * as ActiveStorage from "@rails/activestorage"
-import "channels"
+document.addEventListener('DOMContentLoaded', function() {
+  AOS.init({
+    startEvent: 'turbolinks:load' // if you are using turbolinks
+  });
+});
 
-// import AOS from 'aos';
-// document.addEventListener('DOMContentLoaded', function() {
-//   AOS.init({
-//     startEvent: 'turbolinks:load' // if you are using turbolinks
-//   });
-// });
-
-Rails.start()
-Turbolinks.start()
-ActiveStorage.start()
+window.addEventListener('load', AOS.refresh)
 

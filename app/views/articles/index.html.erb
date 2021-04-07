@@ -1,0 +1,47 @@
+<div class="main-blog">
+
+  <div class="p-4 p-md-5 mb-4 text-white rounded banner-article">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 fst-italic">Découvrez nos articles et soyez au courant de notre actualité</h1>
+      <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
+      <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continuer la lecture...</a></p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div data-aos="zoom-in" class="card mb-3">
+      <div class="row g-0">
+        <div class="col-md-8">
+          <img src="https://sloboda-studio.com/wp-content/uploads/2021/02/Group-598-1.jpg" alt="...">
+        </div>
+        <div class="col-md-2">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4 group-cards-article">
+      <% @articles.each do |article| %>
+      <%= link_to article_path(article) do %>
+      <div data-aos="zoom-in-down" data-aos-duration="2000" class="col card-article">
+        <div class="card h-100">
+          <div class="card-footer">
+            <small class="text-muted">Le <%= article.updated_at %> par <%= article.user_id %> </small>
+          </div>
+          <img src="https://sloboda-studio.com/wp-content/uploads/2021/02/Group-598-1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><%= article.title %></h5>
+            <p class="card-text"> <%= article.content %> </p>
+          </div>
+        </div>
+      </div>
+      <% end %>
+      <% end %>
+    </div>
+    <%= will_paginate @articles, renderer: BootstrapPagination::Rails %>
+  </div>
+
+</div>
