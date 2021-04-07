@@ -1,11 +1,24 @@
-<div id="head">
-  <div class="container">
-    <div class="JumbotronDisplay jumbotron">
-      <div class="Jumbotron justify-content-center align-items-center text-center ">
-        <h2 class="display-4">Notre équipe</h2>
-        <h3>Découvrez les acteurs de notre association <span>Farm square</span></h3>
-        <div class="my-5">
-          <%= link_to "Rejoignez l'aventure", new_contact_path, class: "btn-flat btn btn-lg"  %>
+<div class="p-4 p-md-5 mb-4 text-white rounded banner-team">
+  <div class="col-md-6 px-0">
+    <h1 class="display-4 fst-italic">Découvrez notre équipe et nos bénévoles</h1>
+    <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
+    <div class="my-5">
+      <%= link_to "Rejoignez l'aventure", new_contact_path, class: "btn-flat btn btn-lg"  %>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div data-aos="zoom-in" class="card mb-3">
+    <div class="row g-0">
+      <div class="col-md-8">
+        <%= cl_image_tag("https://res.cloudinary.com/def2ukbdr/image/upload/v1617779114/teamThird_y0q1ob.jpg", style:"max-width:100%") %>
+      </div>
+      <div class="col-md-4">
+        <div class="card-body">
+          <h5 class="card-title">Farm Square</h5>
+          <p class="card-text">L'équipe de farm square est composée de passionnés</p>
+          <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
         </div>
       </div>
     </div>
@@ -14,7 +27,7 @@
 
 <div class="container mt-5">
   <div id="accordion">
-    <div class="card">
+    <div class="card" data-aos="zoom-in">
       <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" >
         <h5>
           <button class="bouton-membre btn btn-link collapsed text-decoration-none">
@@ -34,7 +47,7 @@
         </div>
       </div>
     </div>
-    <div class="card">
+    <div class="card" data-aos="zoom-in">
       <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
         <h5>
           <button class="bouton-membre btn btn-link collapsed text-decoration-none">
@@ -60,7 +73,7 @@
         </div>
       </div>
     </div>
-    <div class="card">
+    <div class="card" data-aos="zoom-in">
       <div class="card-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
         <h5>
           <button class="bouton-membre btn btn-link collapsed text-decoration-none">
