@@ -6,6 +6,7 @@ class User < ApplicationRecord
 
   has_one_attached :avatar
 
+  has_many :articles
   has_many :bookings #,dependent: :destroy
 
   def self.create_with_password(attr={})
