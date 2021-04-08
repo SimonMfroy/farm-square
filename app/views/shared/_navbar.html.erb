@@ -6,7 +6,9 @@
   <%= link_to "Notre Equipe", team_path, class: "nav-link navbar-a" %>
   <%= link_to "Blog", blog_path, class: "nav-link navbar-a" %>
 
-  <%= link_to "Je sais pas", root_path, class: "nav-link" %>
+  <% if user_signed_in? && current_user.profil_id != 1 %>
+    <%= link_to "Liste des tâches", tasks_path, class: "nav-link" %>
+  <% end %>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
