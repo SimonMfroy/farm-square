@@ -11,6 +11,14 @@ class TasksController < ApplicationController
       @tasks
     end
 
+    if params[:order].present?
+      @city = City.where(name:params[:order])
+      @farm = Farm.where(city_id:@city.ids)
+      @tasks = Task.where(farm_id:@farm.ids)
+    else
+      @tasks
+    end
+
   end
 
   def show
