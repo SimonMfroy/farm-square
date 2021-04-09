@@ -25,7 +25,19 @@
           hint: "Entrez votre mot de passe actuel pour confirmer vos changements",
           required: true,
           input_html: { autocomplete: "current-password" } %>
+
+        <%= f.input :avatar %>
+
         </div>
+
+<!--         <%# if @user.avatar.attached? %>
+        <%#= link_to "Supprimer ma photo de profil", user_remove_path(@user),
+          method: :delete,
+          data: { confirm: t('.confirm', default: 'Êtes-vous certain ?') },
+          class: 'delete' %>
+        <%# else %>
+          <p>coucou</p>
+        <%# end %> -->
 
         <div class="form-actions">
           <%= f.button :submit, "Mettre à jour", class:"btn-flat" %>
