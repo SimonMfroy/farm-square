@@ -8,6 +8,7 @@ Rails.application.routes.draw do
     controllers: {
       registrations: 'registrations'
     }
+
   # devise_scope :user do
   #   get '/signout', to: 'devise/sessions#destroy', as: :signout
   # end
