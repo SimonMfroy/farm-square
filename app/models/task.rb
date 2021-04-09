@@ -15,5 +15,7 @@ class Task < ApplicationRecord
   against: :title, using: {
     tsearch: { prefix: true }
   }
+  pg_search_scope :search_by_city,
+  against: :farm_id
   
 end

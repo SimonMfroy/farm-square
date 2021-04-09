@@ -1,7 +1,10 @@
- <% @tasks.each do |task| %>
- <% @farm = @farms.find(task.farm_id) %>
- <% @city = @cities.find(@farm.city_id) %>
- <div class="card">
+<div class="list-tasks row">
+  <p><%= @tasks.count %> Tâches trouvées</p>
+</div>
+<% @tasks.each do |task| %>
+<% @farm = @farms.find(task.farm_id) %>
+<% @city = @cities.find(@farm.city_id) %>
+<div class="card mb-5 mt-5">
   <div class="card-header">
     <%= @city.name %>
   </div>
@@ -10,7 +13,7 @@
     <p class="card-text"><%= task.description %></p>
     <p class="card-text"> Localisation : <%= @farm.address %></p>
     <p class="card-text"> Le : <%= task.start_date.strftime("%d-%m-%Y") %></p>
-    <p class="card-text"> De : <%= task.start_date.strftime("%H:%M")%> à <%= task.end_date.strftime("%H:%M")%> </p>
+    <p class="card-text"> De : <%= task.start_date.strftime("%H:%M")%>h à <%= task.end_date.strftime("%H:%M")%>h</p>
     <a href="#" class="btn btn-primary">Postuler</a>
   </div>
 </div>

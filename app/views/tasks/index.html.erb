@@ -1,23 +1,34 @@
-<div class="container">
-  <div class="row align-items-start">
-    <div class="col-12">
-      <h1 class="h3 mb-3 font-weight-normal text-center">Liste des tâches</h1>
+<div class="p-4 p-md-5 mb-4 text-white rounded banner-team">
+  <div class="col-md-6 px-0">
+    <h1 class="display-4 fst-italic">Liste des tâches</h1>
+
+    <div class="d-flex mt-5">
+      <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Rechercher par villes
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <% @cities.each do |city| %>  
+          <%= link_to city.name, tasks_path(params:{query: params[:query], order: city.name}), class:"dropdown-item", remote: true %>
+          <% end %>
+        </div>
+      </div>
+
+      <div class="home-searchbar">
+        <%= form_tag tasks_path, class: "form-inline d-flex justify-content-center md-form form-sm active-cyan-2 ", method: :get do %>
+          <%= text_field_tag :query, params[:query], class: "form-control mr-3 w-50", placeholder:"Rechercher par missions ..."%>
+          <%= link_to do %>
+            <i class="fas fa-search" aria-hidden="true"></i>
+          <% end %>
+        <% end %>
+      </div>
     </div>
+
   </div>
 </div>
+
 <div class="container">
-  <div class="home-searchbar">
-      <%= form_tag tasks_path, class: "form-inline d-flex justify-content-center md-form form-sm active-cyan-2 mt-2", method: :get do %>
-      <%= text_field_tag :query, params[:query], class: "form-control form-control-sm mr-3 w-50 pinkform", placeholder:"Rechercher par missions ..."%>
-      <%= link_to do %>
-      <i class="fas fa-search" aria-hidden="true"></i>
-      <% end %>
-      <% end %>
-    </div>
-  <div class="list-tasks row">
-      <p><%= @tasks.count %> Tâches trouvées</p>
-  </div>
   <div class="cards-product">
-      <%= render 'card', tasks: @tasks %>
+    <%= render 'card', tasks: @tasks %>
   </div>
 </div>
