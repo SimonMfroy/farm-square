@@ -1,4 +1,78 @@
 #pages-home {
+  
+  .containerTest{
+
+  }
+  h2{
+    color:#84D2E6;
+    font-weight: bold;
+  }
+  .test3{
+    padding:25px;
+  }
+  .test2{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    
+  }
+  .test2>div{
+    background-color: #3DCCA3;
+    padding:50px;
+    border-radius:25px;
+    color:white;
+    /*box-shadow: 5px 4px 20px #1B1F23;*/
+    box-shadow: 9px 9px 20px -4px #1B1F23;
+    margin-left:150px;
+  }
+  .test2:nth-child(even) {
+    
+  }
+  .test2>div:nth-child(even) {
+    background-color:#84D2E6;
+    align-self:flex-end;
+    margin-top: 50px;
+    margin-bottom:50px;
+    margin-right: 150px;
+  }
+  .test1{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    border:0px;
+    background-color:#F4F4F4;
+  }
+  .test1>div{
+    margin-left:50px;
+  }
+  .test1>div>img{
+
+    border-radius:25px;
+  }
+  .jumbotron{
+    margin-bottom:200px;
+  }
+  .card-group{
+    background-color: #02A181;
+    color: white;
+    box-shadow: 5px 4px 20px #1B1F23;
+    border-radius: 20px;
+    padding:30px;
+
+  }
+  .card-group>.card{
+    background-color: #02A181;
+    border:0px;
+    text-align:center;
+  }
+  .card-groupd>.card>img{
+    margin:0 auto;
+  }
+
+  .container{
+    margin-top: 200px;
+    margin-bottom: 200px;
+  }
 
   .arguments {
     background-color: #02A181;
@@ -39,6 +113,7 @@
   .check {
     width: 100px;
     height: 100px;
+    margin: 0 auto;
   }
 
 }
