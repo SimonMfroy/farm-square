@@ -6,7 +6,6 @@ require('@lottiefiles/lottie-player')
 
 // External imports
 import "bootstrap";
-import "stylesheets/application";
 import AOS from 'aos';
 
 document.addEventListener('DOMContentLoaded', function() {
