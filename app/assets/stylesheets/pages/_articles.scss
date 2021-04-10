@@ -1,0 +1,23 @@
+#articles-index {
+
+  .banner-article {
+    background-image: linear-gradient(270deg,#03CEA4,#008F85);
+  }
+
+  .pagination {
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .card-body {
+    color: black;
+  }
+  .featured-text {
+    align-self: center;
+  }
+
+}
