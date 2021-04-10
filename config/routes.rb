@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
 
-  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-
   root to: 'pages#home'
 
   devise_for :users,
@@ -20,5 +18,7 @@ Rails.application.routes.draw do
   resources :contacts, only: [:new, :create, :index]
   resources :bookings
   resources :tasks
+
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
 
 end
