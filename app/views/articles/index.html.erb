@@ -14,9 +14,9 @@
     <div data-aos="zoom-in" class="card mb-3">
       <div class="row g-0">
         <div class="col-md-8">
-          <img src="https://sloboda-studio.com/wp-content/uploads/2021/02/Group-598-1.jpg" alt="...">
+          <img src="https://sloboda-studio.com/wp-content/uploads/2021/02/Group-598-1.jpg" class="card-img-top" alt="illustration featured article">
         </div>
-        <div class="col-md-2">
+        <div class="col featured-text">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -33,7 +33,13 @@
           <div class="card-footer">
             <small class="text-muted">Le <%= article.updated_at %> par <%= article.user_id %> </small>
           </div>
-          <img src="https://sloboda-studio.com/wp-content/uploads/2021/02/Group-598-1.jpg" class="card-img-top" alt="...">
+
+          <% if article.picture.attached? %>
+          <%= cl_image_tag article.picture.key, class: "card-img-top", alt: "illustration article" %>
+          <% else %>
+          <img src="https://sloboda-studio.com/wp-content/uploads/2021/02/Group-598-1.jpg" class="card-img-top" alt="illustration article">
+          <% end %>
+
           <div class="card-body">
             <h5 class="card-title"><%= article.title %></h5>
             <p class="card-text"> <%= article.content %> </p>
