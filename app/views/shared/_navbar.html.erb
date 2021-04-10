@@ -3,8 +3,9 @@
   <%= image_tag "logo_F.png", :style=>'width: 70px;height:70px;' %>
   <% end %>
 
-  <%= link_to "Notre Equipe", team_path, class: "nav-link navbar-a" %>
-  <%= link_to "Blog", blog_path, class: "nav-link navbar-a" %>
+  <%= link_to "Notre Equipe", team_path, class: "nav-link navbar-a btn-ghost" %>
+  <%= link_to "Nous Contacter", contacts_path, class: "nav-link navbar-a btn-ghost" %>
+  <%= link_to "Blog", blog_path, class: "nav-link navbar-a btn-ghost" %>
 
   <% if user_signed_in? && current_user.profil_id != 1 %>
     <%= link_to "Liste des tâches", tasks_path, class: "nav-link" %>

@@ -1,5 +1,9 @@
 class ContactsController < ApplicationController
   #before_action :skip_authorization
+
+  def index
+  end
+
   def new
     @contact = Contact.new
   end
