@@ -1,51 +1,46 @@
 #pages-home {
   
-  .containerTest{
 
-  }
   h2{
     color:#84D2E6;
     font-weight: bold;
   }
-  .test3{
+  .third-bloc{
     padding:25px;
   }
-  .test2{
+  .third-bloc-child{
     display:flex;
     flex-direction:column;
     justify-content:center;
     
   }
-  .test2>div{
+  .third-bloc-child>div{
     background-color: #3DCCA3;
     padding:50px;
     border-radius:25px;
     color:white;
-    /*box-shadow: 5px 4px 20px #1B1F23;*/
     box-shadow: 9px 9px 20px -4px #1B1F23;
     margin-left:150px;
+    max-width:50%;
   }
-  .test2:nth-child(even) {
-    
-  }
-  .test2>div:nth-child(even) {
+  .third-bloc-child>div:nth-child(even) {
     background-color:#84D2E6;
     align-self:flex-end;
     margin-top: 50px;
     margin-bottom:50px;
     margin-right: 150px;
   }
-  .test1{
+  .second-bloc{
     display:flex;
     flex-direction: row;
     align-items:center;
     border:0px;
     background-color:#F4F4F4;
   }
-  .test1>div{
+  .second-bloc>div{
     margin-left:50px;
   }
-  .test1>div>img{
+  .second-bloc>div>img{
 
     border-radius:25px;
   }
@@ -114,6 +109,28 @@
     width: 100px;
     height: 100px;
     margin: 0 auto;
+  }
+  #bloc-max-width{
+    max-width:50%;
+  }
+/* ############################################################### */
+/* ################### Media Queries ############################ */
+
+  @media (max-width: 980px) {
+    .second-bloc{
+      flex-direction: column;
+    }
+    #bloc-max-width{
+      max-width:100%;
+    }
+    .third-bloc-child>div{
+      max-width: 100%;
+      margin-left:20px;
+      margin-right:20px;
+    }
+    .third-bloc-child > div:nth-child(even) {
+      margin-right: 20px;
+    }
   }
 
 }
