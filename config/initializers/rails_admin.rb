@@ -7,11 +7,14 @@ RailsAdmin.config do |config|
   config.authorize_with do |controller|
     unless current_user && current_user.profil_id == 3
       redirect_to(
-        main_app.root_path,
+        main_app.root_url,
         alert: "You are not permitted to view this page"
       )
     end
   end
+
+  # Provide application name
+  config.main_app_name = ["Administration", "Farm-Square"]
 
   ## == CancanCan ==
   # config.authorize_with :cancancan
