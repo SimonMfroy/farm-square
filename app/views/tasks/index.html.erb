@@ -17,9 +17,6 @@
       <div class="home-searchbar">
         <%= form_tag tasks_path, class: "form-inline d-flex justify-content-center md-form form-sm active-cyan-2 ", method: :get do %>
           <%= text_field_tag :query, params[:query], class: "form-control mr-3 w-50", placeholder:"Rechercher par missions ..."%>
-          <%= link_to do %>
-            <i class="fas fa-search" aria-hidden="true"></i>
-          <% end %>
         <% end %>
       </div>
     </div>

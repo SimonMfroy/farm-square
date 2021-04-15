@@ -13,6 +13,9 @@ RailsAdmin.config do |config|
     end
   end
 
+  # Provide application name
+  config.main_app_name = ["Administration", "Farm-Square"]
+
   ## == CancanCan ==
   # config.authorize_with :cancancan
 
