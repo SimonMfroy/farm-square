@@ -1,7 +1,6 @@
 <div class="p-4 p-md-5 mb-4 text-white rounded banner-team">
   <div class="col-md-6 px-0">
-    <h1 class="display-4 fst-italic">Découvrez notre équipe et nos bénévoles</h1>
-    <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
+    <h1 class="display-4 fst-italic" style="font-weight: bold;">Découvrez notre équipe et nos bénévoles</h1>
     <div class="my-5">
       <%= link_to "Rejoignez l'aventure", new_contact_path, class: "btn-flat btn btn-lg"  %>
     </div>
@@ -11,10 +10,7 @@
 <div class="container">
   <div data-aos="zoom-in" class="card mb-3">
     <div class="row g-0">
-      <div class="col-md-8">
-        <%= cl_image_tag("https://res.cloudinary.com/def2ukbdr/image/upload/v1617779114/teamThird_y0q1ob.jpg", style:"max-width:100%") %>
-      </div>
-      <div class="col-md-4">
+      <div class="col">
         <div class="card-body">
           <h5 class="card-title">Farm Square</h5>
           <p class="card-text">L'équipe de farm square est composée de passionnés</p>
@@ -32,8 +28,8 @@
     <div class="card" data-aos="zoom-in">
       <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" >
         <h5>
-          <button class="bouton-membre btn btn-link collapsed text-decoration-none">
-            <%= cl_image_tag("https://res.cloudinary.com/def2ukbdr/image/upload/v1617812112/random5_vp16da.jpg") %>
+          <button class="button-membre btn btn-link collapsed text-decoration-none">
+            <%= cl_image_tag("https://res.cloudinary.com/def2ukbdr/image/upload/v1618794898/farm-square/richard_gyfhzu.jpg") %>
             <span>Richard Laudet, 43 ans (Fondateur)</span><br>
             <i class="fas fa-caret-down"></i>
           </button>
@@ -52,8 +48,8 @@
     <div class="card" data-aos="zoom-in">
       <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
         <h5>
-          <button class="bouton-membre btn btn-link collapsed text-decoration-none">
-            <%= cl_image_tag("https://res.cloudinary.com/def2ukbdr/image/upload/v1617812113/random8_i0ndkz.jpg") %>
+          <button class="button-membre btn btn-link collapsed text-decoration-none">
+            <%= cl_image_tag("https://res.cloudinary.com/def2ukbdr/image/upload/v1618794898/farm-square/ronan_f99wmp.jpg") %>
             <span>Yvan Leblond, 44 ans</span><br>
             <i class="fas fa-caret-down"></i>
           </button>
@@ -78,7 +74,7 @@
     <div class="card" data-aos="zoom-in">
       <div class="card-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
         <h5>
-          <button class="bouton-membre btn btn-link collapsed text-decoration-none">
+          <button class="button-membre btn btn-link collapsed text-decoration-none">
              <%= cl_image_tag("https://res.cloudinary.com/def2ukbdr/image/upload/v1617812113/random7_wewdrl.jpg") %>
             <span>Ronan Clouard, 42 ans</span><br>
             <i class="fas fa-caret-down"></i>
@@ -100,7 +96,7 @@
   <h4 class="py-4 text-center">
     <b>Nos bénévoles</b>
   </h4>
-  <div class="row">    
+  <div class="row">
       <div class="membres col-lg-4 text-center">
         <%= cl_image_tag("https://res.cloudinary.com/def2ukbdr/image/upload/v1617812112/random3_ddbxqh.jpg", class:"rounded-circle", preserveAspectRatio:"xMidYMid slice", focusable:"false", role:"img") %>
         <p>Louise</p>
@@ -113,17 +109,25 @@
       <%= cl_image_tag("https://res.cloudinary.com/def2ukbdr/image/upload/v1617812112/random1_lzjeoy.jpg", class:"rounded-circle", preserveAspectRatio:"xMidYMid slice", focusable:"false", role:"img") %>
         <p>Léa</p>
       </div>
-      <div class="membres col-lg-4 text-center">
-      <%= cl_image_tag("https://res.cloudinary.com/def2ukbdr/image/upload/v1617812112/random2_wa8u5s.jpg", class:"rounded-circle", preserveAspectRatio:"xMidYMid slice", focusable:"false", role:"img") %>
+  </div>
+</div>
+
+<div class="container team-presentation mb-5 mt-5">
+  <h4 class="py-4 text-center">
+    <b>Développeurs de l'application</b>
+  </h4>
+  <div class="row">
+      <div class="devs col-lg-6 text-center">
+      <%= link_to "http://www.nabil-labrazi.com/", target: "_blank" do %>
+      <%= cl_image_tag("https://res.cloudinary.com/def2ukbdr/image/upload/v1618795454/farm-square/50252768_lo6y7z.jpg", class:"rounded-circle", preserveAspectRatio:"xMidYMid slice", focusable:"false", role:"img") %>
         <p>Nabil</p>
+      <% end %>
       </div>
-      <div class="membres col-lg-4 text-center">
-      <%= cl_image_tag("https://res.cloudinary.com/def2ukbdr/image/upload/v1617812113/random6_ijy8tw.jpg", class:"rounded-circle", preserveAspectRatio:"xMidYMid slice", focusable:"false", role:"img") %>
+      <div class="devs col-lg-6 text-center">
+      <%= link_to "https://github.com/SimonMfroy", target: "_blank" do %>
+      <%= cl_image_tag("https://res.cloudinary.com/def2ukbdr/image/upload/v1618795421/farm-square/60211721_g20lgc.jpg", class:"rounded-circle", preserveAspectRatio:"xMidYMid slice", focusable:"false", role:"img") %>
         <p>Simon</p>
+      <% end %>
       </div>
-      <div class="membres col-lg-4 text-center">
-      <%= cl_image_tag("https://res.cloudinary.com/def2ukbdr/image/upload/v1617812112/random4_cbqduc.jpg", class:"rounded-circle", preserveAspectRatio:"xMidYMid slice", focusable:"false", role:"img") %>
-        <p>Amandine</p>
-      </div>   
   </div>
 </div>

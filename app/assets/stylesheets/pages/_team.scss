@@ -1,98 +1,83 @@
 #pages-team {
 
   .banner-team {
-    background-image: linear-gradient(270deg,#03CEA4,#008F85);
-  }
- /*.JumbotronDisplay{
-    background-image: URL('https://res.cloudinary.com/def2ukbdr/image/upload/v1617779114/teamThird_y0q1ob.jpg');
+    background-image: url(https://i.imgur.com/6sgttly.jpg);
     background-position: center;
-    background-size: 90% 115%;  
-  }*/
-/*  #head{
-    background-color:#299085;
-  }*/
-
-/*  .JumbotronDisplay h2,h3 {
-    color:white;
-  }*/
-
-/*  .innerpage-banner {
-      padding-top: 7px;
-      padding-bottom: 7px;
-      margin-top: 3px;
-      margin-bottom: 7px;
-      border-radius: 8px;
-      height: 250px;
-  }*/
-
-/*  .subtitle span {
-      font-weight: bold;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
-
-  .subtitle {
-      color: white;
-  }*/
 
   .bouton {
-      height: 40px;
-      width: 100px;
-      transition: all 0.2s;
-      border-radius: 8px;
-      border: 0.2px solid white;
-      background-color: rgba(167, 164, 158, 0.331);
-      color: white;
-      font-size: 16px;
-      margin-bottom: 0.1px;
+    height: 40px;
+    width: 100px;
+    transition: all 0.2s;
+    border-radius: 8px;
+    border: 0.2px solid white;
+    background-color: rgba(167, 164, 158, 0.331);
+    color: white;
+    font-size: 16px;
+    margin-bottom: 0.1px;
   }
 
   .bouton:hover {
-      color: #000000;
-      background: linear-gradient(to right, #52b69a, #52b788, #74c69d, #95d5b2, #b7e4c7);
+    color: #000000;
+    background: linear-gradient(to right, #52b69a, #52b788, #74c69d, #95d5b2, #b7e4c7);
   }
 
   .card {
-      margin-top: 40px;
-      margin-bottom: 40px;
-      border-radius: 8px;
-      box-shadow: 5px 4px 20px #1b1f23;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 5px 4px 20px #1b1f23;
   }
+
   .card-header:hover {
     border-radius: 8px;
     background: #299085;
   }
 
   .card span {
-      margin-left: 6px;
+    margin-left: 6px;
   }
 
   .collapse_card {
-      background-color: #fdfffc;
+    background-color: #fdfffc;
   }
 
-  .bouton-membre {
+  .button-membre {
     font-weight: bold;
     color: #52b69a;
   }
 
-  .bouton-membre:hover {
-      color: white;
+  .button-membre:hover {
+    color: white;
   }
 
-  .bouton-membre img {
-      width: 140px;
-      height: 140px;
-      border-radius: 8px;
+  .button-membre img {
+    width: 140px;
+    height: 140px;
+    border-radius: 8px;
   }
 
   .rounded-circle {
-      width: 100px;
-      height: 100px
+    width: 100px;
+    height: 100px
   }
 
-  .team-presentation{
+  .team-presentation {
     background-color: #02A181;
-    color: #E5E5E5;   
+    color: #E5E5E5;
     box-shadow: 5px 4px 20px #1B1F23;
     border-radius: 10px;
   }
+
+  .devs a {
+    text-decoration: none;
+    color: #E5E5E5;
+  }
+
+  .devs a:hover {
+    color: red;
+  }
+
 }
