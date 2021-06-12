@@ -13,6 +13,7 @@ Rails.application.routes.draw do
 
   get 'team', to: "pages#team"
   get 'blog', to: "articles#index"
+  get 'mentions', to: "pages#mentions"
 
   resources :contacts, only: [:new, :create, :index]
   resources :bookings

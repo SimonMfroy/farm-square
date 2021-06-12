@@ -9,4 +9,7 @@ class PagesController < ApplicationController
   def team
   end
 
+  def mentions
+  end
+
 end

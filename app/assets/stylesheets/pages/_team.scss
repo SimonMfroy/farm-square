@@ -76,8 +76,12 @@
     color: #E5E5E5;
   }
 
-  .devs a:hover {
+  .popup-bio p:hover, .devs a:hover {
     color: red;
+  }
+
+  .popup-bio img:hover, .popup-bio p:hover {
+    cursor: pointer;
   }
 
 }
