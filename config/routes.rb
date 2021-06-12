@@ -13,10 +13,11 @@ Rails.application.routes.draw do
 
   get 'team', to: "pages#team"
   get 'blog', to: "articles#index"
+  get 'mentions', to: "pages#mentions"
 
-  resources :articles, only: [:show]
   resources :contacts, only: [:new, :create, :index]
   resources :bookings
+  resources :articles
   resources :tasks
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'

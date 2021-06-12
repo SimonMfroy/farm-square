@@ -11,13 +11,11 @@
   width: 40px;
 }
 
-.navbar-lewagon>a{
-	color:white;
-}
-.nav-item.dropdown{
+.nav-item.dropdown {
 	text-align: center;
 }
-#logo-farm-square{
+
+#logo-farm-square {
 	width: 70px;
 	height:70px;
 }
@@ -26,28 +24,39 @@
 /* ################### Media Queries ############################ */
 
   @media (max-width: 991px) {
-    .navbar-lewagon{
+    .navbar-lewagon {
       flex-direction: column;
     }
-    .btn-dropdown{
+    .btn-dropdown {
     	width: 100%;
     	text-align: center;
-    	margin:3px 0; 
+    	margin:3px 0;
     }
-    #user-menu{
+
+    .btn-ghost {
+      width: 100%;
+      text-align: center;
+      margin:3px 0;
+    }
+
+    #user-menu {
     	position: static!important;
     }
-    #user-status{
+
+    #user-status {
     	display:none;
     }
-    #navbarDropdown{
+
+    #navbarDropdown {
     	width:100px;
     }
-    #logo-farm-square{
+
+    #logo-farm-square {
 			width: 100px;
 			height:100px;
 		}
-		#navbarSupported{
+
+    #navbarSupported {
 			margin:10px 0;
 		}
   }

@@ -1,7 +1,6 @@
 <div class="p-4 p-md-5 mb-4 text-white rounded banner-team">
   <div class="col-md-6 px-0">
-    <h1 class="display-4 fst-italic">Découvrez notre équipe et nos bénévoles</h1>
-    <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
+    <h1 class="display-4 fst-italic" style="font-weight: bold;">Découvrez notre équipe et nos bénévoles</h1>
     <div class="my-5">
       <%= link_to "Rejoignez l'aventure", new_contact_path, class: "btn-flat btn btn-lg"  %>
     </div>
@@ -11,10 +10,7 @@
 <div class="container">
   <div data-aos="zoom-in" class="card mb-3">
     <div class="row g-0">
-      <div class="col-md-8">
-        <%= cl_image_tag("https://res.cloudinary.com/def2ukbdr/image/upload/v1617779114/teamThird_y0q1ob.jpg", style:"max-width:100%") %>
-      </div>
-      <div class="col-md-4">
+      <div class="col">
         <div class="card-body">
           <h5 class="card-title">Farm Square</h5>
           <p class="card-text">L'équipe de farm square est composée de passionnés</p>
@@ -27,70 +23,37 @@
   </div>
 </div>
 
-<div class="container mt-5">
-  <div id="accordion">
-    <div class="card" data-aos="zoom-in">
-      <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" >
-        <h5>
-          <button class="bouton-membre btn btn-link collapsed text-decoration-none">
-            <%= cl_image_tag("https://res.cloudinary.com/def2ukbdr/image/upload/v1617812112/random5_vp16da.jpg") %>
-            <span>Richard Laudet, 43 ans (Fondateur)</span><br>
-            <i class="fas fa-caret-down"></i>
-          </button>
-        </h5>
+<div id="modal1" class="modal" tabindex="-1" style="display: none">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Richard Laudet : 43 ans (Fondateur)</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="closeModal1"></button>
       </div>
-      <div id="collapseOne" class="collapse_card collapse" aria-labelledby="headingOne" data-parent="#accordion">
-        <div class="card-body">
-          <p>
-            C’est fort de mes 21 années d’expériences dans les domaines du commerce, du social, de l’agriculture biologique et de l'entreprenariat, qu’il m’a semblé bon de pouvoir mettre toute cette expérience au service de ce projet de ferme urbaine verticale.
-            <br>
-            C’est en faisant face aux nombreuses problématiques rencontrées dans le domaine du maraîchage biologique, que j’ai pris conscience des difficultés pour les commerçants et de la cuisine collective, d’avoir accès aux légumes et aromatiques de qualité, tout au long de l’année. Les problèmes de régularité d’approvisionnement, les fluctuations des prix du marché, leurs besoins en volumes à des périodes bien définies m’ont encouragé à développer ce projet, utilisant des techniques innovantes et créatives comme l’aquaponie et l'automatisation.
-          </p>
-        </div>
+      <div class="modal-body">
+        <p>Description :
+          C’est fort de mes 21 années d’expériences dans les domaines du commerce, du social, de l’agriculture biologique et de l'entreprenariat, qu’il m’a semblé bon de pouvoir mettre toute cette expérience au service de ce projet de ferme urbaine verticale.
+          <br>
+          C’est en faisant face aux nombreuses problématiques rencontrées dans le domaine du maraîchage biologique, que j’ai pris conscience des difficultés pour les commerçants et de la cuisine collective, d’avoir accès aux légumes et aromatiques de qualité, tout au long de l’année. Les problèmes de régularité d’approvisionnement, les fluctuations des prix du marché, leurs besoins en volumes à des périodes bien définies m’ont encouragé à développer ce projet, utilisant des techniques innovantes et créatives comme l’aquaponie et l'automatisation.
+        </p>
+        <%= cl_image_tag("https://res.cloudinary.com/def2ukbdr/image/upload/v1618794898/farm-square/richard_gyfhzu.jpg", class:"img-responsive", alt:"photo Richard") %>
       </div>
     </div>
-    <div class="card" data-aos="zoom-in">
-      <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        <h5>
-          <button class="bouton-membre btn btn-link collapsed text-decoration-none">
-            <%= cl_image_tag("https://res.cloudinary.com/def2ukbdr/image/upload/v1617812113/random8_i0ndkz.jpg") %>
-            <span>Yvan Leblond, 44 ans</span><br>
-            <i class="fas fa-caret-down"></i>
-          </button>
-        </h5>
+  </div>
+</div>
+
+<div id="modal2" class="modal" tabindex="-1" style="display: none">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Ronan Clouard : 42 ans (Co-Fondateur)</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="closeModal2"></button>
       </div>
-      <div id="collapseTwo" class="collapse_card collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-        <div class="card-body">
-          <p>
-            Jardinier/Paysagiste depuis 22 ans.
-            <br>
-            Maraicher/Arboriculteur depuis 10 ans.
-            <br>
-            Le monde des plantes me passionne, et aux vues des enjeux de demain, je crois que l’hydroponie et l’aquaponie joueront bientôt un rôle majeur dans l’agro-alimentaire, ne serait-ce que pour l’économie en eau que l’hydroponie représente.
-            <br>
-            Mêler ces projets à des enjeux locaux, sociaux, environnementaux, humains, économiques pour qu’ils s’inscrivent dans le temps, c’est comme une graine qu’on plante dans une terre bien préparé.
-            <br>
-            J’ai rejoint l’équipe Farm Square fin 2020, nous travaillons sur des territoires différents (je suis dans le sud de la France) mais mettons nos savoirs faire en commun pour tenir compte des particularités de chaque projets aussi différents soient-ils.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="card" data-aos="zoom-in">
-      <div class="card-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        <h5>
-          <button class="bouton-membre btn btn-link collapsed text-decoration-none">
-             <%= cl_image_tag("https://res.cloudinary.com/def2ukbdr/image/upload/v1617812113/random7_wewdrl.jpg") %>
-            <span>Ronan Clouard, 42 ans</span><br>
-            <i class="fas fa-caret-down"></i>
-          </button>
-        </h5>
-      </div>
-      <div id="collapseThree" class="collapse_card collapse" aria-labelledby="headingThree" data-parent="#accordion">
-        <div class="card-body">
-          <p>
-            Passionné par la permaculture, la formation, le management et les projets innovants je me suis joint à l’aventure dont je partage la vision. Je m’intéresse aux problématiques environnementales et sociales, et l’aquaponie va nous permettre de produire des légumes à très haute qualité nutritive tout en ayant une faible utilisation des énergies. L’agriculture urbaine n’est pas un problème, mais une réelle opportunité que nous devons ainsi transmettre aux futures générations.
-          </p>
-        </div>
+      <div class="modal-body">
+        <p>Description :
+          Passionné par la permaculture, la formation, le management et les projets innovants je me suis joint à l’aventure dont je partage la vision. Je m’intéresse aux problématiques environnementales et sociales, et l’aquaponie va nous permettre de produire des légumes à très haute qualité nutritive tout en ayant une faible utilisation des énergies. L’agriculture urbaine n’est pas un problème, mais une réelle opportunité que nous devons ainsi transmettre aux futures générations.
+        </p>
+        <%= cl_image_tag("https://res.cloudinary.com/def2ukbdr/image/upload/v1618794898/farm-square/ronan_f99wmp.jpg", class:"img-responsive", alt:"photo Ronan") %>
       </div>
     </div>
   </div>
@@ -98,32 +61,98 @@
 
 <div class="container team-presentation mb-5 mt-5">
   <h4 class="py-4 text-center">
-    <b>Nos bénévoles</b>
+    <b>Les créateurs</b>
   </h4>
-  <div class="row">    
-      <div class="membres col-lg-4 text-center">
-        <%= cl_image_tag("https://res.cloudinary.com/def2ukbdr/image/upload/v1617812112/random3_ddbxqh.jpg", class:"rounded-circle", preserveAspectRatio:"xMidYMid slice", focusable:"false", role:"img") %>
-        <p>Louise</p>
+  <div class="row">
+    <div class="devs col-lg-6 text-center">
+      <div class="popup-bio">
+        <%= cl_image_tag("https://res.cloudinary.com/def2ukbdr/image/upload/v1618794898/farm-square/richard_gyfhzu.jpg", id:"popup1", class:"rounded-circle", preserveAspectRatio:"xMidYMid slice", focusable:"false", role:"img") %>
+        <p>Richard</p>
       </div>
-      <div class="membres col-lg-4 text-center">
-        <%= cl_image_tag("https://res.cloudinary.com/def2ukbdr/image/upload/v1617812113/random9_qwoerj.jpg", class:"rounded-circle", preserveAspectRatio:"xMidYMid slice", focusable:"false", role:"img") %>
-        <p>Romain</p>
+    </div>
+    <div class="devs col-lg-6 text-center">
+      <div class="popup-bio">
+        <%= cl_image_tag("https://res.cloudinary.com/def2ukbdr/image/upload/v1618794898/farm-square/ronan_f99wmp.jpg", id:"popup2", class:"rounded-circle", preserveAspectRatio:"xMidYMid slice", focusable:"false", role:"img") %>
+        <p>Ronan</p>
       </div>
-      <div class="membres col-lg-4 text-center">
-      <%= cl_image_tag("https://res.cloudinary.com/def2ukbdr/image/upload/v1617812112/random1_lzjeoy.jpg", class:"rounded-circle", preserveAspectRatio:"xMidYMid slice", focusable:"false", role:"img") %>
-        <p>Léa</p>
-      </div>
-      <div class="membres col-lg-4 text-center">
-      <%= cl_image_tag("https://res.cloudinary.com/def2ukbdr/image/upload/v1617812112/random2_wa8u5s.jpg", class:"rounded-circle", preserveAspectRatio:"xMidYMid slice", focusable:"false", role:"img") %>
-        <p>Nabil</p>
-      </div>
-      <div class="membres col-lg-4 text-center">
-      <%= cl_image_tag("https://res.cloudinary.com/def2ukbdr/image/upload/v1617812113/random6_ijy8tw.jpg", class:"rounded-circle", preserveAspectRatio:"xMidYMid slice", focusable:"false", role:"img") %>
-        <p>Simon</p>
-      </div>
-      <div class="membres col-lg-4 text-center">
-      <%= cl_image_tag("https://res.cloudinary.com/def2ukbdr/image/upload/v1617812112/random4_cbqduc.jpg", class:"rounded-circle", preserveAspectRatio:"xMidYMid slice", focusable:"false", role:"img") %>
-        <p>Amandine</p>
-      </div>   
+    </div>
   </div>
 </div>
+
+<div class="container team-presentation mb-5 mt-5" data-aos="zoom-in">
+  <h4 class="py-4 text-center">
+    <b>Nos bénévoles</b>
+  </h4>
+  <div class="row">
+    <div class="membres col-lg-4 text-center">
+      <%= cl_image_tag("https://res.cloudinary.com/def2ukbdr/image/upload/v1623458551/image2_vt6oqn.jpg", class:"rounded-circle", preserveAspectRatio:"xMidYMid slice", focusable:"false", role:"img") %>
+      <p>Magalie Coué - Contrôleuse SNCF</p>
+    </div>
+    <div class="membres col-lg-4 text-center">
+      <%= cl_image_tag("https://res.cloudinary.com/def2ukbdr/image/upload/v1623458526/image1_wprs9a.jpg", class:"rounded-circle", preserveAspectRatio:"xMidYMid slice", focusable:"false", role:"img") %>
+      <p>Leduc Jérôme - Responsable brasserie l'atelier</p>
+    </div>
+    <div class="membres col-lg-4 text-center">
+      <%= cl_image_tag("https://res.cloudinary.com/def2ukbdr/image/upload/v1617812112/random1_lzjeoy.jpg", class:"rounded-circle", preserveAspectRatio:"xMidYMid slice", focusable:"false", role:"img") %>
+      <p>Slimani Lordine - Chef de Projet Système d’information</p>
+    </div>
+  </div>
+</div>
+
+<div class="container team-presentation mb-5 mt-5" data-aos="zoom-in">
+  <h4 class="py-4 text-center">
+    <b>Développeurs de l'application</b>
+  </h4>
+  <div class="row">
+    <div class="devs col-lg-6 text-center">
+      <%= link_to "http://www.nabil-labrazi.com/", target: "_blank" do %>
+      <%= cl_image_tag("https://res.cloudinary.com/def2ukbdr/image/upload/v1618795454/farm-square/50252768_lo6y7z.jpg", class:"rounded-circle", preserveAspectRatio:"xMidYMid slice", focusable:"false", role:"img") %>
+      <p>Nabil</p>
+      <% end %>
+    </div>
+    <div class="devs col-lg-6 text-center">
+      <%= link_to "https://github.com/SimonMfroy", target: "_blank" do %>
+      <%= cl_image_tag("https://res.cloudinary.com/def2ukbdr/image/upload/v1618795421/farm-square/60211721_g20lgc.jpg", class:"rounded-circle", preserveAspectRatio:"xMidYMid slice", focusable:"false", role:"img") %>
+      <p>Simon</p>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
+<script>
+
+  const getModal1 = document.getElementById("modal1");
+  const getModal2 = document.getElementById("modal2");
+
+  const popModal1 = document.getElementById('popup1')
+  const popModal2 = document.getElementById('popup2')
+
+  const closeModal1 = document.getElementById("closeModal1");
+  const closeModal2 = document.getElementById("closeModal2");
+
+  popModal1.addEventListener("click", show1);
+  popModal2.addEventListener("click", show2);
+
+  closeModal1.addEventListener("click", exit1);
+  closeModal2.addEventListener("click", exit2);
+
+  function show1() {
+    console.log("modal 1")
+    modal1.style.display = "block";
+  }
+
+  function show2() {
+    console.log("modal 2")
+    modal2.style.display = "block";
+  }
+
+  function exit1() {
+    modal1.style.display = "none";
+  }
+
+  function exit2() {
+    modal2.style.display = "none";
+  }
+
+</script>

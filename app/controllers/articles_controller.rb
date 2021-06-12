@@ -11,16 +11,26 @@ class ArticlesController < ApplicationController
   end
 
   def create
+    @user = current_user
     @article = Article.new(article_params)
     if @article.save
       redirect_to blog_path, notice: "Article créé"
     else
-      redirect_to blog_path, notice: "Error, Error, Error !!!"
+      redirect_to blog_path, notice: "Error #{@article.errors.messages}"
     end
   end
 
   def edit
+  end
+
+  def update
     @article = Article.find(params[:id])
+    @article.update(article_params)
+    if @article.save
+      redirect_to articles_path, notice: "Article mis à jour"
+    else
+      render :edit, notice: "ERREUR"
+    end
   end
 
   def show

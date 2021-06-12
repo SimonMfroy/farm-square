@@ -2,8 +2,7 @@
 
   <div class="p-4 p-md-5 mb-4 text-white rounded banner-article">
     <div class="col-md-6 px-0">
-      <h1 class="display-4 fst-italic">Découvrez nos articles et soyez au courant de notre actualité</h1>
-      <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
+      <h1 class="display-4 fst-italic" style="font-weight: bold;">Découvrez nos articles et soyez au courant de notre actualité</h1>
       <div class="my-5">
         <%= link_to "Rejoignez l'aventure", new_contact_path, class: "btn-flat btn btn-lg" %>
       </div>
@@ -31,7 +30,11 @@
       <div data-aos="zoom-in-down" data-aos-duration="2000" class="col card-article">
         <div class="card h-100">
           <div class="card-footer">
-            <small class="text-muted">Le <%= article.updated_at %> par <%= article.user_id %> </small>
+            <small class="text-muted">Le <%= article.updated_at %> par <%= article.user_id %>
+              <% if current_user && current_user.profil_id == 3 %>
+              <%= link_to "Modifier", edit_article_path(article) %>
+              <% end %>
+            </small>
           </div>
 
           <% if article.picture.attached? %>
@@ -49,7 +52,13 @@
       <% end %>
       <% end %>
     </div>
-    <%= will_paginate @articles, renderer: BootstrapPagination::Rails %>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item">
+          <%= will_paginate @articles, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %>
+        </li>
+      </ul>
+    </nav>
   </div>
 
 </div>
