@@ -41,7 +41,7 @@ class ArticlesController < ApplicationController
 
   def show
     @article = Article.find(params[:id])
-    @user = @article.user_id
+    @user = @article.user.email
   end
 
   private

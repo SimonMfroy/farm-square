@@ -10,7 +10,7 @@
   </div>
 
   <div class="container">
-    <div data-aos="zoom-in" class="card mb-3">
+<!--     <div data-aos="zoom-in" class="card mb-3">
       <div class="row g-0">
         <div class="col-md-8">
           <img src="https://sloboda-studio.com/wp-content/uploads/2021/02/Group-598-1.jpg" class="card-img-top" alt="illustration featured article">
@@ -23,14 +23,14 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="row row-cols-1 row-cols-md-3 g-4 group-cards-article">
       <% @articles.each do |article| %>
       <%= link_to article_path(article) do %>
       <div data-aos="zoom-in-down" data-aos-duration="2000" class="col card-article">
         <div class="card h-100">
           <div class="card-footer">
-            <small class="text-muted">Le <%= article.updated_at %> par <%= article.user_id %>
+            <small class="text-muted">Le <%= article.updated_at %> par <%= article.user.email %>
               <% if current_user && current_user.profil_id == 3 %>
               <%= link_to "Modifier", edit_article_path(article) %>
               <%= link_to "Supprimer", { action: :destroy, id: article.id }, method: :delete, data: { confirm: 'Êtes vous sûr(e)?' } %>
