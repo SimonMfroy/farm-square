@@ -34,8 +34,14 @@ class ArticlesController < ApplicationController
     end
   end
 
+  def destroy
+    @article = Article.find(params[:id])
+    @article.destroy
+  end
+
   def show
     @article = Article.find(params[:id])
+    @user = @article.user_id
   end
 
   private
