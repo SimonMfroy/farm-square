@@ -1,24 +1,20 @@
-# README
+![alt text](https://media.npr.org/assets/img/2013/09/24/chicago-rooftop-farm_wide-7cbe7ae709a8afc2f75650d26929ff43f82d1c3e.jpg)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+# Farm-Square
+# Coded with <3 & Rails
 
-* Ruby version
+By Nabil & Simon
 
-* System dependencies
 
-* Configuration
+## Description :
+Manage your farms easily
+Organise your team & time, create events, tasks etc...
 
-* Database creation
 
-* Database initialization
+## How to use :
+- clone repo https://github.com/SimonMfroy/farm-square.git
+- open browser (login/signup) & ENJOY !
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## To do :
+- End planing
