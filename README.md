@@ -1,4 +1,4 @@
-![alt text](https://media.npr.org/assets/img/2013/09/24/chicago-rooftop-farm_wide-7cbe7ae709a8afc2f75650d26929ff43f82d1c3e.jpg)
+![alt text](https://www.hortibiz.com/fileadmin/_processed_/3/d/csm_Square_Roots_opens_new_indoor_farm__produces_first_harvest2_b3659f3c2f.jpg)
 
 
 # Farm-Square
